@@ -7,8 +7,8 @@ const getWine = async (req, res) => {
     const wine = await Wine.findOne({ food });
 
     if (!wine) {
-      res.status(200).json({
-        status: "error",
+      res.status(404).json({
+        status: "not found",
         data: {
           message: `Could not find a wine pairing for ${food}`,
         },
