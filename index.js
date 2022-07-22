@@ -1,5 +1,5 @@
 const express = require("express");
-const mongoose = require("mongoose");
+const connectDB = require("./db/db");
 const cors = require("cors");
 require("dotenv").config();
 const wineRoutes = require("./routes/wine");
@@ -8,12 +8,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-mongoose
-  .connect(process.env.MONGO_URI)
-  .then(() => {
-    console.log("DB connected");
-  })
-  .catch((err) => console.log(err));
+connectDB();
 
 app.use("/", wineRoutes);
 
