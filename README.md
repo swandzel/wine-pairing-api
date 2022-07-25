@@ -7,3 +7,5 @@ https://wine-paring.herokuapp.com/getWine?food=**QUERY**
 ## Available query:
 
 pizza, pork, lamb, beef, burger, chicken, white fish, salad, cake
+
+**Built in Node, Express and MongoDB**
