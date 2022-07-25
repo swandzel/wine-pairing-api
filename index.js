@@ -11,6 +11,7 @@ app.use(cors());
 connectDB();
 
 app.use("/", wineRoutes);
+app.use(express.static("public"));
 
 const PORT = process.env.PORT || 3002;
 
