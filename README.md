@@ -2,7 +2,7 @@
 
 ## Available endpoint:
 
-https://wine-pairing.herokuapp.com/getWine?food=**QUERY**
+https://wine-pairing-app-api.herokuapp.com/getWine?food=**QUERY**
 
 ## Available query:
 
