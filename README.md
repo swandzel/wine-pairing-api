@@ -2,7 +2,7 @@
 
 ## Available endpoint:
 
-https://wine-pairing-api.onrender.com/getWine?food=**QUERY**
+https://wine-pairing-api.onrender.com/getWine?food=QUERY
 
 ## Available query:
 
